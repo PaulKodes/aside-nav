@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    width: 98.85%;
+    height: 11vh;
+    background-color: yellowgreen;
+    padding: 10px;
+}
+.container {
+    overflow: hidden;
+    background-color: gray;
+}
+.container .main {
+    background-color: bisque;
+    width: 1000px;
+    height: 59vh;
+    margin: 20px 10px 15px 10px;
+    display: inline-block;
+}
+.container .mid-right-nav {
+    float: right;
+    width: calc(1000px / 2);
+    display: flex;
+    margin: auto;
+}
+.container .mid-right-nav aside {
+    width: 250px;
+    height: 65vh;
+    background-color: bisque;
+    display: inline-block;
+    padding: 15px;
+}
+.container .mid-right-nav nav {
+    width: 250px;
+    height: 65vh;
+    background-color: lightblue;
+    padding: 15px;
+}
+footer {
+    width: 98.25%;
+    height: 13.9vh;
+    background-color: yellowgreen;
+    padding: 15px;
+}
