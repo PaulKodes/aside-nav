@@ -1,46 +1,112 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Merriweather', sans-serif;
 }
-header {
-    width: 98.85%;
-    height: 11vh;
+header, footer {
+    height: 7.38vh;
+    width: 98%;
     background-color: yellowgreen;
-    padding: 10px;
+    padding: 15px;
+}
+main {
+    display: flex;
+    flex-direction: row;
+}
+nav {
+    background-color: rgba(185, 238, 70, 0.5);
+    width: 20%;
+    padding: 15px;
+    height: 72.75vh;
+}
+aside {
+    background-color: rgba(122, 163, 27, 0.5);
+    width: 20%;
+    padding: 15px;
+    height: 72.75vh;
+}
+article {
+    width: 50%;
+    margin: 5%;
+    background-color: rgba(185, 238, 70, 0.5);
+    order: -1;
+    padding: 15px;
 }
 .container {
-    overflow: hidden;
-    background-color: gray;
-}
-.container .main {
-    background-color: bisque;
-    width: 1000px;
-    height: 59vh;
-    margin: 20px 10px 15px 10px;
-    display: inline-block;
-}
-.container .mid-right-nav {
-    float: right;
-    width: calc(1000px / 2);
     display: flex;
+    column-gap: 30px;
+}
+.flex-item.left {
+    width: 65%;
+    padding: 15px 10px;
+}
+.field {
+    display: flex;
+    padding-bottom: 5px;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+.field label {
+    padding-top: 5px;
+}
+.field label[class="primary"] {
+    display: flex;
+    width: 70px;
+}
+.field label[class="date"] {
+    display: flex;
+    width: 150px;
+}
+.field label[class="place"] {
+    display: flex;
+    width: 115px;
+}
+.field label[class="drop"] {
+    display: flex;
+    width: 120px;
+}
+input, select {
+    padding: 3px;
+    font-size: 10px;
+    flex-grow: 1;
+    line-height: 26px;
+}
+
+.flex-item.right {
+    width: 35%;
+    float: right;
+    padding: 15px 10px;
+}
+.flex-item.right 
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 12px;
+}
+.title {
+    font-size: 16px;
+}
+.details {
+    font: 14px;
+}
+.flex-item.right h3 {
+    font-weight: normal;
+}
+.flex-item.right input {
+    margin-bottom: 10px;
+}
+.btn-container .btn {
+    padding: 10px;
+    font-size: 11px;
+    display: block;
     margin: auto;
+    border: none;
+    background-color: gray;
+    color: white;
+    border-radius: 2px;
 }
-.container .mid-right-nav aside {
-    width: 250px;
-    height: 65vh;
-    background-color: bisque;
-    display: inline-block;
-    padding: 15px;
-}
-.container .mid-right-nav nav {
-    width: 250px;
-    height: 65vh;
-    background-color: lightblue;
-    padding: 15px;
-}
-footer {
-    width: 98.25%;
-    height: 13.9vh;
-    background-color: yellowgreen;
-    padding: 15px;
+.btn-container .btn:hover {
+    background-color: lightgray;
+    cursor: pointer;
 }

@@ -6,20 +6,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+    
 </head>
 <body>
-    <header>Header</header>
-    <div class="container">
+    <header>Heaader</header>
+    <main>
+        <nav>Navbar</nav>
 
-        <div class="main">
-        </div>
+        <article>
+            <form>
+            <div class="container">
+                <div class="flex-item left">
+                    <div class="field">
+                        <label class="primary" for="firstName">Name</label>
+                        <input type="text" id="name" placeholder="Enter your Name...">
+                    </div>
+                    <div class="field">
+                        <label class="primary" for="LastName">Phone</label>
+                        <input type="tel" id="phone" placeholder="Enter your Number...">
+                    </div>
+                    <div class="field">
+                        <label class="primary" for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email...">
+                    </div>
+                    <div class="field">
+                        <label class="date" for="pickupDate/Time">Pickup Date/Time</label>
+                        <input type="datetime-local" id="datetime">
+                    </div>
+                    <div class="field">
+                        <label class="place" for="pickPlace">Pickup Place</label>
+                        <select name="place" id="dropOff">
+                            <option value="text">Select One</option>
+                                <option value="Manila">Manila</option>
+                                <option value="Clark City">Clark City</option>
+                                <option value="Baguio City">Baguio City</option>
+                                <option value="San Fernando City">San Fernando City</option>
+                                <option value="Subic Bay">Subic bay</option>
+                                <option value="Vigan City">Vigan City</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label class="drop" for="dropoffPlace">Dropoff Place</label>
+                        <input type="text" id="dropOffPlace" placeholder="Where do you want to be dropped?...">
+                    </div>
+                </div>
 
-        <div class="mid-right-nav">
-            <aside>Aside</aside>
-            <nav>NavBar</nav>
-        </div>
+                <div class="flex-item right">
+                    <div class="rights">
+                        <h3>Which vehicle do you require?</h3><br />
+                        <input type="radio" name="vehicle" id="van">
+                        
+                        <label for="Van" class="details">Van</label>
+                        <br />
+                        <input type="radio" name="vehicle" id="Jeepney">
+                        <label for="Jeepney" class="details">Jeepney</label>
+                        
+                        <br />
+                        <input type="radio" name="vehicle" id="Tricycle">
+                        <label for="Tricycle" class="details">Tricycle</label>
+                        <br /><br />
+                    </div>
 
-    </div>
+                    <div class="rights">
+                        <h3>Extras</h3> <br />
+                        <input type="checkbox" name="vehicle" id="van">
+                        <label for="babyseat" class="details">Baby Seat</label>
+                        <br />
+                        <input type="checkbox" name="vehicle" id="Jeepney">
+                        <label for="wheelchairAccess" class="details">Wheelchair Access</label>
+                        <br />
+                        <input type="checkbox" name="vehicle" id="Tricycle">
+                        <label for="stockTip" class="details">Stock Tip</label>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="btn-container">
+                <button type="button" class="btn btn-secondary">Submit Booking</button>
+            </div>
+            </form>
+        </article>
+
+        <aside>Aside</aside>
+    </main>
     <footer>Footer</footer>
 </body>
 </html>
